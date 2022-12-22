@@ -5,7 +5,12 @@ body {
 }
 
 table {
-    border: 1px solid;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid black;
 }
 
 .font-bold {
@@ -19,16 +24,21 @@ table {
 .align-left {
     text-align: left;
 }
+
 .uppercase {
     text-transform: uppercase;
 }
 
-a:link {
-    color: #00f;
+.valign-top {
+    vertical-align: top;
 }
 
 a:visited {
     color: #005;
+}
+
+a:link {
+    color: #00f;
 }
 
 a:hover {
