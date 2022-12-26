@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+            vertical-align: top;
+        }
+
+        fieldset {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h3>Contact information</h3>
+            <table border="1" cellspacing="0" cellpadding="5px">
+                <tr>
+                    <td><strong>Phone</strong></td>
+                    <td>+30989770933 </td>
+                </tr>
+                <tr>
+                    <td><strong>Address</strong></td>
+                    <td>Ukraine, Khmelnytskyi</td>
+            </table>
+        </section>
+        <section>
+            <form action="/HW-forms.html" method="get">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <div>
+                        <label for="email"> E-mail: </label>
+                        <input type="text" required name="email" id="email" />
+                    </div>
+                    <div>
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" rows="5" cols="30"></textarea>
+                    </div>
+                    <div>
+                        <label> Work type: </label>
+                        <select required name="Work-type">
+                            <option value="1">Office work</option>
+                            <option value="2">Remote work</option>
+                            <option value="3">One-time project</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="Hire me" />
+                </fieldset>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
