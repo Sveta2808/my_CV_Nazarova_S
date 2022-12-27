@@ -1,0 +1,50 @@
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.valign-top {
+    vertical-align: top;
+}
+
+a:visited {
+    color: #005;
+}
+
+a:link {
+    color: #00f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.style-type-square {
+    list-style-type: square;
+}
