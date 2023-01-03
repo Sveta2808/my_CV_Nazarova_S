@@ -6,11 +6,22 @@ body {
 
 table {
     border-collapse: collapse;
+    background-color: rgb(219, 198, 221);
 }
 
-td, th {
+td,
+th {
     padding: 5px;
     border: 1px solid black;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(165, 10, 196);
+}
+
+.my-photo {
+    border: 2px solid rgb(165, 10, 196);
+    padding: 10px;
 }
 
 .font-bold {
@@ -27,6 +38,11 @@ td, th {
 
 .uppercase {
     text-transform: uppercase;
+}
+
+th,
+.uppercase {
+    background-color: rgb(191, 107, 212);
 }
 
 .valign-top {
