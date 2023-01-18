@@ -39,6 +39,11 @@ main>div {
     color: #1C2E8C;
 }
 
+.my-photo {
+    width: 385px;
+    height: 292px;
+}
+
 .contact,
 .languages {
     margin-left: 40px;
@@ -116,62 +121,3 @@ main>div {
     list-style-type: disc;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: rgb(219, 198, 221);
-}
-
-td,
-th {
-    padding: 5px;
-    border: 1px solid black;
-}
-
-.border-bottom {
-    border-bottom: 1px solid rgb(165, 10, 196);
-}
-
-
-
-.my-photo {
-    width: 385px;
-    height: 292px;
-}
-
-.font-bold {
-    font-weight: bold;
-}
-
-.font-italic {
-    font-style: italic;
-}
-
-.align-left {
-    text-align: left;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-th,
-.uppercase {
-    background-color: rgb(191, 107, 212);
-}
-
-.valign-top {
-    vertical-align: top;
-}
-
-a:visited {
-    color: #005;
-}
-
-a:link {
-    color: #00f;
-}
-
-a:hover {
-    text-decoration: none;
-}
