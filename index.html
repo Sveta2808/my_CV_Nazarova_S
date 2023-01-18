@@ -7,79 +7,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="container">
-        <div>
-            <h1 class="font-italic border-bottom">Nazarova Svitlana</h1>
-            <p class="font-bold border-bottom">Front End Developer</p>
+    <aside class="container-1">
+        <div class="title">
+            <h1 class="color-name">Svitlana</h1>
+            <h1 class="color-surname">Nazarova</h1>
         </div>
         <div>
             <img src="my_photo.jpg" alt="my photo" class="my-photo">
         </div>
-    </header>
-    <main>
-        <h3>Work experience</h3>
-        <table cellspacing="0" cellpadding="5px">
-            <thead>
-                <tr class="uppercase">
-                    <th class="align-left">Period:</th>
-                    <th>Position</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2020 - present</td>
-                    <td>Accountant at
-                        <a href="https://khmplwha.wordpress.com/">
-                            Khmelnytskyi regional branch of the All-Ukrainian Network of People Living with
-                            HIV</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="uppercase font-bold valign-top" rowspan="2">Description</td>
-                    <td>Realization of tender purchases</td>
-                </tr>
-                <tr>
-                    <td>Maintaining current contractual documentation </td>
-                </tr>
-                <tr>
-                    <td>2008 - 2012</td>
-                    <td>Accountant at
-                        <a href="https://kmoas.gov.ua/">
-                            Khmelnytskyi District Administrative Court</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="uppercase font-bold valign-top" rowspan="3">Description</td>
-                    <td>Maintaining primary documentation</td>
-                </tr>
-                <tr>
-                    <td>Calculation of wages</td>
-                </tr>
-                <tr>
-                    <td>Annual and quarterly reporting</td>
-                </tr>
-            </tbody>
-        </table>
-        <h3>Skills:</h3>
-        <ul class="style-type-square border-bottom">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScrpipt</li>
-            <li>React</li>
-            <li>Vue.js</li>
-        </ul>
-        <h3>Achievements:</h3>
-        <ol class="border-bottom">
-            <li>Started to study programming on JavaScript.</li>
-            <li>Have almost 10 years experience of accounting.</li>
-            <li>Have a law degree with honors.</li>
-            <li>Speak Spanish and English fluently.</li>
-        </ol>
-    </main>
+        <div>
+            <h3 class="contact">Contact</h3>
+            <ul class="contact-info">
+                <li>Address</li>
+                <ul>
+                    <li>Khmelnitskiy, Ukraine</li>
+                </ul>
+                <li>Phone</li>
+                <ul>
+                    <li>+380976655444</li>
+                </ul>
+                <li>Email</li>
+                <ul>
+                    <li>
+                        <a href="">nazarovas84@gmail.com</a>
+                    </li>
+                </ul>
+                <li>Linkedin</li>
+                <ul>
+                    <li>
+                        <a href="">https://www.linkedin.com/in/nazarovas/</a>
+                    </li>
+                </ul>
+            </ul>
+            <h3 class="languages">Languages</h3>
+            <ul class="languages-info">
+                <li>Ukrainian - C2</li>
+                <li>English - B2</li>
+                <li>Spanish - B1</li>
+            </ul>
 
+        </div>
+    </aside>
+    <main class="container-2">
+
+        <h3 class="title-main">Summary</h3>
+        <p>
+            I'm an Accountant with 10 years of experience and all this time I've been helping
+            businesses to reach their goals by using modern (and sometimes outdated) technologies.
+            For this time I've been working in different technical sides of products and have experience
+            with back-end (PHP), front-end (JS, TypeScript, React, Angular), and mobile (React Native).
+        </p>
+        <h3 class="title-main">Skills Highlights</h3>
+        <div class="list-skills">
+            <div class="list-skills-1">
+                <ul class="style-type">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScrpipt</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                </ul>
+            </div>
+
+            <div class="list-skills-1">
+                <ul class="style-type">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScrpipt</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                </ul>
+            </div>
+        </div>
+
+        <h3 class="title-main">Work Experience</h3>
+        <div>
+            <p><strong>Name of employer:</strong> Khmelnytskyi regional branch of the All-Ukrainian Network of People Living with
+                HIV</p>
+            <p><strong>Dates of employment:</strong> 2020 - 2022</p>
+            <p><strong>Job title:</strong> Accountant</p>
+            <p><strong>Project/Role description: </strong> Realization of tender purchases. Maintaining current contractual
+                documentation
+            </p>
+        </div>
+        <div>
+            <p><strong>Name of employer:</strong> Khmelnytskyi District Administrative Court</p>
+            <p><strong>Dates of employment:</strong> 2008 - 2012</p>
+            <p><strong>Job title:</strong> Accountant</p>
+            <p><strong>Project/Role description: </strong> Maintaining current contractual documentation</p>
+        </div>
+        <h3 class="title-main">Education</h3>
+        <div>
+            <p> <strong>Dates of studying: </strong> from 2001 – to 2005</p>
+            <p> <strong>Name of institution:</strong> Khmelnytskyi National University</p>
+            <p> <strong>Degree and major:</strong> Specialist in Accouting and Audit</p>
+        </div>
+    </main>
 </body>
 
 </html>
