@@ -7,28 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./styles_form.css" rel="stylesheet" />
-    <style>
-        div {
-            margin-bottom: 10px;
-        }
-
-        label {
-            display: inline-block;
-            width: 80px;
-            vertical-align: top;
-        }
-
-        fieldset {
-            width: 50%;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
         <section>
             <h3>Contact information</h3>
-            <table border="1" cellspacing="0" cellpadding="5px">
+            <table class="contact_info" cellspacing="0" cellpadding="5px">
                 <tr>
                     <td><strong>Phone</strong></td>
                     <td>+30989770933 </td>
@@ -44,21 +32,21 @@
                     <legend>Contact form</legend>
                     <div>
                         <label for="email"> E-mail: </label>
-                        <input type="text" required name="email" id="email" />
+                        <input type="text" required name="email" id="email" placeholder="Enter your email" title="example@mail.com" />
                     </div>
                     <div>
                         <label for="description">Description:</label>
                         <textarea id="description" name="description" rows="5" cols="30"></textarea>
                     </div>
                     <div>
-                        <label> Work type: </label>
-                        <select required name="Work-type">
+                        <label for="work-type"> Work type: </label>
+                        <select required name="Work-type" id="work-type">
                             <option value="1">Office work</option>
                             <option value="2">Remote work</option>
                             <option value="3">One-time project</option>
                         </select>
                     </div>
-                    <button type="submit" value="Hire me">Hire me</button>
+                    <input type="submit" value="Hire me"/>
                 </fieldset>
             </form>
         </section>

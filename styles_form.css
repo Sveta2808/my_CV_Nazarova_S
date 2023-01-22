@@ -1,8 +1,84 @@
-button {
-    width: 82px;
-    height: 32px;
-    left: 48px;
-    top: 138px;
+body {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+fieldset {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact_info, tr, td {
+    border: 0.25px solid #333;
+    margin: 10px;
+}
+
+textarea,
+select,
+input {
+    appearance: none;
+    background: #F8FAFC;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type=text] {
+    padding: 12px;
+    gap: 10px;
+
+}
+
+input[type=text]:placeholder {
+
+    color: #B8BCCA;
+}
+
+textarea:invalid,
+select:invalid,
+input[type=text]:invalid {
+    border: 1px solid #ED0131;
+    border-radius: 4px;
+}
+
+textarea {
+
+    padding: 12px;
+    gap: 8px;
+    min-width: 460px;
+    min-height: 139px;
+    border-radius: 4px;
+}
+
+label {
+
+    color: #6F7482;
+}
+
+select {
+    color: #3B4256;
+    min-width: 460px;
+    min-height: 48px;
+    border-radius: 4px;
+    padding: 15px;
+    background: url('./vector/Vector_select.png') no-repeat center right .75rem #F8FAFC;
+
+}
+
+input[type=submit] {
+    color: #fff;
+    padding: 4px 16px;
     background: #0048D9;
+
     border-radius: 6px
+}
+
+input[type=submit]:hover {
+
+    background: #002266;
 }
