@@ -5,14 +5,21 @@ body {
     font-size: 16px;
 }
 
-fieldset {
-    max-width: 1024px;
-    margin: 0 auto;
-}
-
-.contact_info, tr, td {
+.contact_info,
+tr,
+td {
     border: 0.25px solid #333;
     margin: 10px;
+}
+
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    width: 1024px;
+    position: fixed;
+    top: calc(50% - 207px);
+    left: calc(50% - 512px);
 }
 
 textarea,
@@ -20,9 +27,9 @@ select,
 input {
     appearance: none;
     background: #F8FAFC;
-    margin: 0;
-    padding: 0;
     border: none;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,6 +51,14 @@ select:invalid,
 input[type=text]:invalid {
     border: 1px solid #ED0131;
     border-radius: 4px;
+}
+
+textarea:focus, select:focus, input[type=text]:focus {
+    border: 1px solid #0E6245;
+}
+
+textarea:active, select:active, input[type=text]:active {
+    border: 1px solid #0048D9;
 }
 
 textarea {
@@ -74,7 +89,6 @@ input[type=submit] {
     color: #fff;
     padding: 4px 16px;
     background: #0048D9;
-
     border-radius: 6px
 }
 
