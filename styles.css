@@ -7,6 +7,8 @@ body {
 }
 aside{
     border-right: 1px solid #000;
+    position: fixed;
+    top: 0;
 }
 
 main>div {
@@ -95,7 +97,7 @@ main>div {
 }
 
 .container-2 {
-    padding-left: 55px;
+    padding-left: 420px;
     width: 60%;
     display: flex;
     flex-direction: column;
