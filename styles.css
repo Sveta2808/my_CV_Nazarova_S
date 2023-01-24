@@ -1,53 +1,14 @@
-:root {
-     /* colors */
-     --color-main-primary: #8DA1B9;
-     --color-main-secondary: #95ADB6;
-     --color-error-primary: #841019;
-     --color-error-secondary: #20242A;
-     --color-text: #333;
-     --color-border-primary: #3E474A;
-
-    /* sizes */
-    --border-main-width: 1px;
-    --space-main: 8px;
-    --border-radius-medium: 4px;
-    --border-radius-large: 8px;
-  
-    /* font */
-    --font-size-xsmall: 8px;
-    --font-size-small: 12px;
-    --font-size-medium: 16px;
-    --font-size-large: 20px;
-    --font-size-xlarge: 24px;
-  
-    --font-family-base: Arial, Helvetica, sans-serif;
-    --font-family-code: "Gill Sans", sans-serif;
-  }
-  
-  .main-theme {
-    /* colors */
-    --color-main-primary: #8DA1B9;
-    --color-main-secondary: #95ADB6;
-    --color-error-primary: #841019;
-    --color-error-secondary: #20242A;
-    --color-text: #20242A;
-    --color-border-primary: #3E474A;
-  }
-  
-
-
-
-
 
 body {
-    color: #333;
+    color: var(--color-body);
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: row;
 
 }
-aside{
-    border-right: 1px solid #000;
+
+aside {
+    border-right: var(--border-main-width) solid var(--color-border-primary);
     position: fixed;
     top: 0;
 }
@@ -56,13 +17,15 @@ main>div {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #263036;
+    color: var(--color-primary);
 }
- p {
+
+p {
     margin: 0;
- }
+}
+
 .container-1 {
-    background: #86A3B4;
+    background: var(--color-aside-background);
     width: 385px;
     display: flex;
     flex-direction: column;
@@ -70,19 +33,19 @@ main>div {
 }
 
 .title {
-    padding-left: 40px;
+    padding-left: var(--space-left);
     font-weight: 600;
     font-size: 40px;
     line-height: 48px;
 }
 
 .color-name {
-    color: white;
+    color: var(--color-aside-title-name);
     margin-top: 58px;
 }
 
 .color-surname {
-    color: #1C2E8C;
+    color: var(--color-aside-title-surname);
 }
 
 .my-photo {
@@ -92,13 +55,13 @@ main>div {
 
 .contact,
 .languages {
-    margin-left: 40px;
-    padding-bottom: 15px;
+    margin-left: var(--space-left);
+    padding-bottom: var(--padding-bottom-contact);
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
-    color: #263036;
-    border-bottom: 6px solid #1E1E1E;
+    color: var(--color-primary);
+    border-bottom: var(--border-aside-bottom-width) solid var(--color-secondary);
     width: 289px;
 }
 
@@ -113,32 +76,32 @@ main>div {
 }
 
 .contact-info>li {
-    padding-top: 35px;
+    padding-top: var(--padding-top-contact-info);
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    color: #263036;
+    color: var(--color-primary);
 
 }
 
 .contact-info>ul :last-child {
-    padding-top: 11px;
+    padding-top: var(--padding-top-contact-info-last);
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    color: #263036
+    color: var(--color-primary);
 }
 
 .languages-info {
-    padding-bottom: 530px;
+    padding-bottom: var(--padding-bottom-languages-info);
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #1E1E1E;
+    color: var(--color-secondary);
 }
 
 .container-2 {
-    padding-left: 420px;
+    padding-left: var(--padding-left-container-2);
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -148,9 +111,9 @@ main>div {
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
-    color: #1E1E1E;
-    border-bottom: 5px solid #000000;
-    padding-bottom: 28px;
+    color: var(--color-secondary);
+    border-bottom: var(--border-main-bottom-width) solid var(--color-border-primary);
+    padding-bottom: var(--padding-bottom-title-main);
     margin-top: 58px;
 }
 
@@ -166,4 +129,3 @@ main>div {
 .style-type {
     list-style-type: disc;
 }
-

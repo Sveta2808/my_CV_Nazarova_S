@@ -1,0 +1,21 @@
+.my-theme {
+    /* colors */
+    --color-body: #333;
+    --color-primary: #263036;
+    --color-secondary: #1E1E1E;
+    --color-border-primary: #000;
+    --color-aside-title-name: #FFF4E9;
+    --color-aside-title-surname: #8d6b94;
+    --color-aside-background: #c3a29e;
+
+    /* sizes */
+    --border-main-width: 1px;
+    --border-main-bottom-width: 5px;
+    --border-aside-bottom-width: 6px;
+    --space-left: 40px;
+    --padding-top-contact-info:35px;
+    --padding-top-contact-info-last:11px;
+    --padding-bottom-title-main:28px;
+    --padding-bottom-languages-info: 530px;
+    --padding-bottom-contact: 15px;
+}
