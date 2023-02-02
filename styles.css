@@ -14,6 +14,7 @@ p {
 aside {
     border-right: var(--border-main-width) solid var(--color-border-primary);
     background-color: var(--color-aside-background);
+    box-shadow: 5px -4px 16px 3px #9d91a5;
 }
 
 main>div {
@@ -75,6 +76,12 @@ main>div {
     object-fit: cover;
     width: 385px;
     height: 292px;
+}
+
+.my-photo:hover {
+    transform: scale(1.5) translate(17%, 7%);
+    box-shadow: 5px 7px 11px 1px #9d91a5;
+
 }
 
 .contact,
@@ -142,6 +149,14 @@ main>div {
     list-style-type: disc;
 }
 
+.expirience_opacity {
+    opacity: 70%;
+}
+
+.expirience_opacity:hover {
+    opacity: 100%;
+}
+
 @media screen and (max-width:550px) {
     .container {
         grid-template-columns: 1fr;
@@ -169,5 +184,14 @@ main>div {
 
     .title-main {
         margin-right: 0;
+    }
+
+    aside {
+        box-shadow: none;
+    }
+
+    .my-photo:hover {
+        transform: none;
+        box-shadow: none;
     }
 }
