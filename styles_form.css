@@ -15,12 +15,29 @@ td {
 
 fieldset {
     margin: 0;
-    padding: 0;
+    padding: 30px;
     width: 1024px;
     position: fixed;
     top: calc(50% - 207px);
     left: calc(50% - 512px);
+    animation-name: fieldset-animation;
+    animation-duration: 2s;
+    
 }
+
+@keyframes fieldset-animation {
+    0% {
+        scale: 200%;
+        opacity: 0;
+    }
+
+    100% {
+        scale: 100%;
+        opacity: 100%;
+    }
+}
+
+
 
 textarea,
 select,

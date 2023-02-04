@@ -16,14 +16,12 @@ aside {
     border-right: var(--border-main-width) solid var(--color-border-primary);
     background-color: var(--color-aside-background);
     box-shadow: 5px -4px 16px 3px #9d91a5;
-    position: relative;
-    animation-name: example;
-    animation-duration: 4s;
+
 }
 
 @keyframes example {
     0% {
-       bottom: 0;
+        bottom: 0;
         opacity: 0%;
     }
 
@@ -41,40 +39,32 @@ aside {
 .container {
     display: grid;
     grid-template-columns: 0.5fr 1.5fr;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.5fr;
     gap: 0 58px;
     grid-template-areas:
-        "sidebar content1"
-        "sidebar content2"
-        "sidebar content3"
-        "sidebar content4";
+        "sidebar main-content";
 }
 
 .sidebar {
     grid-area: sidebar;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
-.content1 {
-    margin-top: 58px;
-    grid-area: content1;
-}
-
-.content2 {
-    grid-area: content2;
-}
-
-.content3 {
-    grid-area: content3;
-}
-
+.content1,
+.content2,
+.content3,
 .content4 {
-    grid-area: content4;
+    margin-top: 58px;
+
 }
 
 .main-content {
+    grid-area: main-content;
     position: relative;
     animation-name: example;
     animation-duration: 4.5s;
+    z-index: 1;
 
 }
 
@@ -95,14 +85,17 @@ aside {
 
 .my-photo {
     object-fit: cover;
+    position: relative;
     width: 385px;
     height: 292px;
+    transition: 2s ease-in-out;
+    z-index: 100;
 }
 
 .my-photo:hover {
     transform: scale(1.5) translate(17%, 7%);
     box-shadow: 5px 7px 11px 1px #9d91a5;
-
+    border-radius: 20px;
 }
 
 .contact,
@@ -176,6 +169,24 @@ aside {
 
 .expirience_opacity:hover {
     opacity: 100%;
+    animation-name: text-opacity;
+    animation-duration: 1.5s;
+}
+
+@keyframes text-opacity {
+    0% {
+        opacity: 70%;
+    }
+
+    50% {
+
+        opacity: 80%;
+    }
+
+    100% {
+
+        opacity: 100%;
+    }
 }
 
 @media screen and (max-width:550px) {
