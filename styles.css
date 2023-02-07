@@ -3,9 +3,9 @@ body {
     font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: row;
-
 }
-aside{
+
+aside {
     border-right: 1px solid #000;
 }
 
@@ -15,22 +15,14 @@ main>div {
     line-height: 19px;
     color: #263036;
 }
- p {
-    margin: 0;
- }
-.container-1 {
-    background: #86A3B4;
-    width: 385px;
-    display: flex;
-    flex-direction: column;
 
+p,
+h1 {
+    margin: 0;
 }
 
-.title {
-    padding-left: 40px;
+strong {
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
 }
 
 .color-name {
@@ -40,6 +32,22 @@ main>div {
 
 .color-surname {
     color: #1C2E8C;
+    margin-bottom: 36px;
+}
+
+.title>h1 {
+    padding-left: 40px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+
+}
+
+.container-1 {
+    background: #86A3B4;
+    width: 385px;
+    display: flex;
+    flex-direction: column;
 }
 
 .my-photo {
@@ -49,14 +57,22 @@ main>div {
 
 .contact,
 .languages {
-    margin-left: 40px;
-    padding-bottom: 15px;
+
+    padding-bottom: 8px;
     font-weight: 600;
     font-size: 32px;
     line-height: 39px;
     color: #263036;
     border-bottom: 6px solid #1E1E1E;
     width: 289px;
+}
+
+.contact {
+    margin: 50px 0 -8px 40px;
+}
+
+.languages {
+    margin: 36px 0 23px 40px;
 }
 
 .contact-info,
@@ -70,12 +86,11 @@ main>div {
 }
 
 .contact-info>li {
-    padding-top: 35px;
+    padding-top: 31px;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
     color: #263036;
-
 }
 
 .contact-info>ul :last-child {
@@ -83,7 +98,11 @@ main>div {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    color: #263036
+}
+
+.contact-info-link {
+    text-decoration: none;
+    color: #1C2E8C;
 }
 
 .languages-info {
@@ -92,6 +111,10 @@ main>div {
     font-size: 20px;
     line-height: 24px;
     color: #1E1E1E;
+}
+
+.languages-info>li {
+    padding-bottom: 15px;
 }
 
 .container-2 {
@@ -111,6 +134,11 @@ main>div {
     margin-top: 58px;
 }
 
+.title-main-about,
+.list-skills {
+    font-weight: 600;
+}
+
 .list-skills {
     display: flex;
     flex-direction: row;
@@ -124,3 +152,7 @@ main>div {
     list-style-type: disc;
 }
 
+.work-experience {
+    font-size: 14px;
+    line-height: 17px;
+}
