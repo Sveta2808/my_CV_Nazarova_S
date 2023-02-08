@@ -150,6 +150,10 @@ aside {
     padding-bottom: var(--padding-bottom-title-main);
 }
 
+.about-main, .list-skills {
+    font-weight: 600;
+}
+
 .list-skills {
     display: flex;
     flex-direction: row;
