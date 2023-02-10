@@ -1,0 +1,42 @@
+$colorBody: #333;
+$colorPrimary: #263036;
+$colorSecondary: #1E1E1E;
+$colorBorderPrimary: #000;
+$colorAsideTitleName: #ffffff;
+$colorAsideTitleSurname: #1C2E8C;
+$colorAsideBackground: #86A3B4;
+
+$borderMainWidth: 1px;
+$borderMainBottomWidth: 5px;
+$borderAsideBottomWidth: 6px;
+$spaceLeft: 40px;
+$paddingTopContacInfo: 35px;
+$paddingTopContactInfoLast: 11px;
+$paddingLeftContainer2: 420px;
+$paddingBottomTitleMain: 28px;
+$paddingBottomLanguagesInfo: 530px;
+$paddingBottomContact: 15px;
+
+
+.main-theme {
+    /* colors */
+    --color-body: $colorBody;
+    --color-primary: $colorPrimary;
+    --color-secondary: $colorSecondary;
+    --color-border-primary: $colorBorderPrimary;
+    --color-aside-title-name: $colorAsideTitleName;
+    --color-aside-title-surname: $colorAsideTitleSurname;
+    --color-aside-background: $colorAsideBackground;
+ 
+    /* sizes */
+    --border-main-width: $borderMainWidth;
+    --border-main-bottom-width: $borderMainBottomWidth;
+    --border-aside-bottom-width: $borderAsideBottomWidth;
+    --space-left: $spaceLeft;
+    --padding-top-contact-info:$paddingTopContacInfo;
+    --padding-top-contact-info-last:  $paddingTopContactInfoLast;
+    --padding-left-container-2: $paddingLeftContainer2;
+    --padding-bottom-title-main: $paddingBottomTitleMain;
+    --padding-bottom-languages-info: $paddingBottomLanguagesInfo;
+    --padding-bottom-contact: $paddingBottomContact;
+}
