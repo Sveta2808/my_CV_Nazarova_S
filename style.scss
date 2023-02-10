@@ -9,11 +9,16 @@
 $fontFamily: 'Inter', sans-serif;
 $marginTop58: 58px;
 $strongFont: 600;
+$fontTitle: 40px;
 
 body {
     color: $colorBody;
     font-family: $fontFamily;
     position: absolute;
+}
+
+h1 {
+    margin: 0;
 }
 
 h3 {
@@ -42,6 +47,7 @@ aside {
 }
 
 .sidebar {
+    font-weight: $strongFont;
     grid-area: sidebar;
     position: relative;
     @include animation;
@@ -76,9 +82,10 @@ aside {
 }
 
 .title {
-    padding-left: $spaceLeft;
-    font-weight: $strongFont;
-    font-size: 40px;
+    h1 {
+        padding-left: $spaceLeft;
+        font-size: $fontTitle;
+    }
 }
 
 .color-name {
@@ -88,6 +95,7 @@ aside {
 
 .color-surname {
     color: $colorAsideTitleSurname;
+    margin-bottom: 36px;
 }
 
 .my-photo {
@@ -108,7 +116,6 @@ aside {
 .contact {
     margin-left: $spaceLeft;
     padding-bottom: $paddingBottomContact;
-    font-weight: $strongFont;
     font-size: 32px;
     color: $colorPrimary;
     border-bottom: $borderAsideBottomWidth solid $colorSecondary;
@@ -118,11 +125,18 @@ aside {
 .languages {
     margin-left: $spaceLeft;
     padding-bottom: $paddingBottomContact;
-    font-weight: $strongFont;
     font-size: 32px;
     color: $colorPrimary;
     border-bottom: $borderAsideBottomWidth solid $colorSecondary;
     width: 289px;
+}
+
+.contact {
+    margin: 50px 0 -8px 40px;
+}
+
+.languages {
+    margin: 36px 0 23px 40px;
 }
 
 .contact-info {
@@ -134,7 +148,6 @@ aside {
 
         &:last-child {
             padding-top: $paddingTopContactInfoLast;
-            font-weight: $strongFont;
             font-size: 16px;
             color: $colorPrimary;
         }
@@ -142,16 +155,19 @@ aside {
 
     >li {
         padding-top: $paddingTopContacInfo;
-        font-weight: $strongFont;
         font-size: 24px;
         color: $colorPrimary;
     }
 }
 
+.link-color {
+    color: #1C2E8C;
+    text-decoration: none;
+}
+
 .languages-info {
     list-style-type: none;
     padding-bottom: $paddingBottomLanguagesInfo;
-    font-weight: $strongFont;
     font-size: 20px;
     color: $colorSecondary;
 }
