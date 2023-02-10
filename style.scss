@@ -228,8 +228,8 @@ aside {
 @media screen and (max-width:550px) {
     .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.3fr 0.2fr 0.3fr 0.09fr;
-        grid-template-areas: "sidebar" "content1" "content2" "content3" "content4";
+        grid-template-rows: 1fr 1.5fr;
+        grid-template-areas: "sidebar" "main-content";
     }
 
     .languages-info {
