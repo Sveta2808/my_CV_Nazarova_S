@@ -33,14 +33,14 @@ aside {
   grid-area: sidebar;
   position: relative;
   animation-name: example;
-  animation-duration: 4s;
+  animation-duration: 2.5s;
 }
 
 .main-content {
   grid-area: main-content;
   position: relative;
   animation-name: example;
-  animation-duration: 4.5s;
+  animation-duration: 3s;
   z-index: 1;
 }
 
@@ -58,19 +58,7 @@ aside {
     opacity: 100%;
   }
 }
-.content1 {
-  margin-top: 58px;
-}
-
-.content2 {
-  margin-top: 58px;
-}
-
-.content3 {
-  margin-top: 58px;
-}
-
-.content4 {
+.content {
   margin-top: 58px;
 }
 
@@ -209,16 +197,7 @@ aside {
   .languages-info {
     padding-bottom: 0;
   }
-  .content1 {
-    margin: 30px;
-  }
-  .content2 {
-    margin: 30px;
-  }
-  .content3 {
-    margin: 30px;
-  }
-  .content4 {
+  .content {
     margin: 30px;
   }
   .title-main {

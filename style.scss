@@ -1,15 +1,14 @@
 @import 'my-theme';
-@import 'theme';
 
-@mixin animation ($speed: 0.5s) {
+
+@mixin animation ($speed: 2.5s) {
     animation-name: example;
     animation-duration: $speed;
-
 }
 
 $fontFamily: 'Inter', sans-serif;
-
-
+$marginTop58: 58px;
+$strongFont: 600;
 
 body {
     color: $colorBody;
@@ -26,7 +25,7 @@ p {
 }
 
 strong {
-    font-weight: 600;
+    font-weight: $strongFont;
 }
 
 aside {
@@ -45,13 +44,13 @@ aside {
 .sidebar {
     grid-area: sidebar;
     position: relative;
-    @include animation ($speed: 1s);
+    @include animation;
 }
 
 .main-content {
     grid-area: main-content;
     position: relative;
-    @include animation;
+    @include animation ($speed: 3s);
     z-index: 1;
 }
 
@@ -72,32 +71,19 @@ aside {
     }
 }
 
-.content1 {
-    margin-top: 58px;
+.content {
+    margin-top: $marginTop58;
 }
-
-.content2 {
-    margin-top: 58px;
-}
-
-.content3 {
-    margin-top: 58px;
-}
-
-.content4 {
-    margin-top: 58px;
-}
-
 
 .title {
     padding-left: $spaceLeft;
-    font-weight: 600;
+    font-weight: $strongFont;
     font-size: 40px;
 }
 
 .color-name {
     color: $colorAsideTitleName;
-    margin-top: 58px;
+    margin-top: $marginTop58;
 }
 
 .color-surname {
@@ -122,7 +108,7 @@ aside {
 .contact {
     margin-left: $spaceLeft;
     padding-bottom: $paddingBottomContact;
-    font-weight: 600;
+    font-weight: $strongFont;
     font-size: 32px;
     color: $colorPrimary;
     border-bottom: $borderAsideBottomWidth solid $colorSecondary;
@@ -132,7 +118,7 @@ aside {
 .languages {
     margin-left: $spaceLeft;
     padding-bottom: $paddingBottomContact;
-    font-weight: 600;
+    font-weight: $strongFont;
     font-size: 32px;
     color: $colorPrimary;
     border-bottom: $borderAsideBottomWidth solid $colorSecondary;
@@ -148,7 +134,7 @@ aside {
 
         &:last-child {
             padding-top: $paddingTopContactInfoLast;
-            font-weight: 600;
+            font-weight: $strongFont;
             font-size: 16px;
             color: $colorPrimary;
         }
@@ -156,7 +142,7 @@ aside {
 
     >li {
         padding-top: $paddingTopContacInfo;
-        font-weight: 600;
+        font-weight: $strongFont;
         font-size: 24px;
         color: $colorPrimary;
     }
@@ -165,14 +151,14 @@ aside {
 .languages-info {
     list-style-type: none;
     padding-bottom: $paddingBottomLanguagesInfo;
-    font-weight: 600;
+    font-weight: $strongFont;
     font-size: 20px;
     color: $colorSecondary;
 }
 
 .title-main {
     margin-right: 100px;
-    font-weight: 600;
+    font-weight: $strongFont;
     font-size: 36px;
     color: $colorSecondary;
     border-bottom: $borderMainBottomWidth solid $colorBorderPrimary;
@@ -180,11 +166,11 @@ aside {
 }
 
 .about-main {
-    font-weight: 600;
+    font-weight: $strongFont;
 }
 
 .list-skills {
-    font-weight: 600;
+    font-weight: $strongFont;
     display: flex;
     flex-direction: row;
 }
@@ -234,19 +220,7 @@ aside {
         padding-bottom: 0;
     }
 
-    .content1 {
-        margin: 30px;
-    }
-
-    .content2 {
-        margin: 30px;
-    }
-
-    .content3 {
-        margin: 30px;
-    }
-
-    .content4 {
+    .content {
         margin: 30px;
     }
 
