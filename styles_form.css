@@ -5,24 +5,13 @@ body {
     font-size: 16px;
 }
 
-.contact_info,
-tr,
-td {
-    border: 0.25px solid #333;
-    margin: 10px;
-}
-
-
 fieldset {
-    margin: 0;
-    padding: 30px;
     width: 1024px;
-    position: fixed;
     top: calc(50% - 207px);
     left: calc(50% - 512px);
     animation-name: fieldset-animation;
     animation-duration: 2s;
-    
+
 }
 
 @keyframes fieldset-animation {
@@ -37,79 +26,15 @@ fieldset {
     }
 }
 
-
-
-textarea,
-select,
-input {
-    appearance: none;
-    background: #F8FAFC;
-    border: none;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-input[type=text] {
-    padding: 12px;
-    gap: 10px;
-
-}
-
-input[type=text]:placeholder {
-
-    color: #B8BCCA;
-}
-
-textarea:invalid,
-select:invalid,
-input[type=text]:invalid {
-    border: 1px solid #ED0131;
-    border-radius: 4px;
-}
-
-textarea:focus, select:focus, input[type=text]:focus {
-    border: 1px solid #0E6245;
-}
-
-textarea:active, select:active, input[type=text]:active {
-    border: 1px solid #0048D9;
-}
-
 textarea {
-
-    padding: 12px;
-    gap: 8px;
     min-width: 460px;
     min-height: 139px;
-    border-radius: 4px;
-}
-
-label {
-
-    color: #6F7482;
 }
 
 select {
-    color: #3B4256;
+
     min-width: 460px;
     min-height: 48px;
-    border-radius: 4px;
-    padding: 15px;
-    background: url('./vector/Vector_select.png') no-repeat center right .75rem #F8FAFC;
+    background: url('./vector/Vector_select.png') no-repeat center right .75rem;
 
-}
-
-input[type=submit] {
-    color: #fff;
-    padding: 4px 16px;
-    background: #0048D9;
-    border-radius: 6px
-}
-
-input[type=submit]:hover {
-
-    background: #002266;
 }
