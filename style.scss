@@ -4,9 +4,14 @@ body {
     font-size: 14px;
 }
 
-h1,
+h1, h2,
 p {
     margin: 0;
+}
+
+button {
+    cursor: pointer;
+
 }
 
 .header {
@@ -17,6 +22,7 @@ p {
     width: 100vw;
     display: flex;
     justify-content: center;
+    margin-bottom: 70px;
 
     nav {
 
@@ -94,5 +100,33 @@ p {
 
             }
         }
+    }
+}
+
+.services {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+
+
+
+    &_title {
+        font-weight: 800;
+        font-size: 64px;
+        line-height: 96px;
+        text-align: center;
+        color: #828282;
+        
+
+    }
+
+    &_title-icon {
+       
+        position: relative;
+        top: -47px;
+        left: -86px;
+        width: 108px;
+        height: 94px;
     }
 }
