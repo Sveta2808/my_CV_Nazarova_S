@@ -182,16 +182,71 @@ button {
   text-align: center;
 }
 
-.section-3 .testimonials {
+.section-3_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 49px;
+}
+.section-3_content_1 {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  max-width: 577px;
+  padding: 30px;
+  border: 1px solid #6CB981;
+  border-radius: 40px;
+  margin-bottom: 45px;
+}
+.section-3_content_1_img {
+  width: 80px;
+  height: 80px;
+}
+.section-3_content_1_title {
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #6CB981;
+}
+.section-3_content_1_bg-stars {
+  background-image: url("./Round_rock/assets/s3-stars.png");
+  width: 114px;
+  height: 18px;
+  margin-top: 10px;
+}
+.section-3 .testymonials {
   display: flex;
   justify-self: center;
   flex-direction: column;
   align-items: center;
 }
-.section-3 .testimonials_title {
+.section-3 .testymonials_title {
   font-weight: 800;
   font-size: 64px;
   line-height: 96px;
   text-align: center;
   color: #828282;
+  margin: 70px 0;
+}
+
+.section-4 {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+}
+.section-4 .contact-us {
+  align-items: center;
+}
+.section-4 .contact-us_title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 96px;
+  text-align: center;
+  color: #828282;
+  margin: 70px 0;
+}
+.section-4_form {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
