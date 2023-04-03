@@ -1,10 +1,16 @@
-const photo_animation = document.querySelector('.photo_animation');
+const photo = document.querySelector('.my-photo');
 
-photo_animation.addEventListener('click, function () => {
+function animation() {
 
-photo_animation.classList.toggle ('
-
+    photo.classList.toggle('photo_animation_active');
     
 }
 
-    
+photo.addEventListener('click', animation);
+
+
+
+
+
+
+
