@@ -9,14 +9,21 @@ function animation() {
 photo.addEventListener('click', animation);
 
 const letter = document.querySelector('.letter');
+const letter_A = document.querySelector('.letter_A');
+const letter_B = document.querySelector('.letter_B');
+const letter_C = document.querySelector('.letter_C');
+const letter_D = document.querySelector('.letter_D');
 
-letter.addEventListener('keydown', (e) => alert('key pressed ' + e.key))
+document.addEventListener('keydown', function (event) {
+    if (event.code === 'KeyA') {
+        return letter_A.scrollIntoView(true)
+    }
+    else if (event.code === 'KeyB') {
+        return letter_B.scrollIntoView(true)
+    }
+    else if (event.code === 'KeyC') {
+        return letter_C.scrollIntoView(true)}
+    else if (event.code === 'KeyD') {
+        return letter_D.scrollIntoView(true)}
 
-letter.addEventListener('keydown', function (e) {
-    if e.key {letter.scrollIntoView(true);
 });
-
-
-
-
-
