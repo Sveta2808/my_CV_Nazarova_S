@@ -102,17 +102,17 @@ aside {
 .my-photo {
     object-fit: cover;
     z-index: 100;
-    position:relative;
+    position: relative;
     width: 385px;
     height: 292px;
     transition: 2s ease-in-out;
-   
+
 }
 
 
 .photo_animation_active {
     transition: 2s ease-in-out;
-    
+
     transform: scale(1.5) translate(17%, 7%);
     box-shadow: 5px 7px 11px 1px #9d91a5;
     border-radius: 20px;
@@ -177,7 +177,14 @@ aside {
     color: $colorSecondary;
 }
 
+.letter {
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
 .title-main {
+    display: inline-block;
     margin-right: 100px;
     font-weight: $strongFont;
     font-size: 36px;
