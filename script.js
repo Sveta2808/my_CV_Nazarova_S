@@ -1,29 +1,39 @@
-const photo = document.querySelector('.my-photo');
+// 1
+let numbers = [1, 2, 3, 4, 5];
+let avg = calculateAverage(numbers);
 
-function animation() {
+function calculateAverage(arr) {
+    let sum = 0;
+    
+    for (let i = 0; i < arr.length; i++) {
+         sum += arr[i];
+    }
+    return sum / arr.length;
+}
+console.log("The average is: " + avg); // має бути 3
 
-    photo.classList.toggle('photo_animation_active');
 
+// 2
+function User(name, age) {
+    this.name = name;
+    this.age = age;
 }
 
-photo.addEventListener('click', animation);
+User.prototype.sayHello = function () {
+    return `Hi. My name is ${name} and I'm {this.age} years old`;
+}
 
-const letter = document.querySelector('.letter');
-const letter_A = document.querySelector('.letter_A');
-const letter_B = document.querySelector('.letter_B');
-const letter_C = document.querySelector('.letter_C');
-const letter_D = document.querySelector('.letter_D');
+const user = new User('Sherlock', 27);
+console.log(user.sayHello); // має вивести "Hi. My name is Sherlock and I'm 27 years old"
 
-document.addEventListener('keydown', function (event) {
-    if (event.code === 'KeyA') {
-        return letter_A.scrollIntoView(true)
+
+// 3
+const c = calculator();
+console.log(c()); // має вивести 1
+console.log(c()); // має вивести 2
+
+const calculator = function (init = 0) {
+    return function () {
+        return init++;
     }
-    else if (event.code === 'KeyB') {
-        return letter_B.scrollIntoView(true)
-    }
-    else if (event.code === 'KeyC') {
-        return letter_C.scrollIntoView(true)}
-    else if (event.code === 'KeyD') {
-        return letter_D.scrollIntoView(true)}
-
-});
+}
