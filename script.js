@@ -20,11 +20,11 @@ function User(name, age) {
 }
 
 User.prototype.sayHello = function () {
-    return `Hi. My name is {name} and I'm {this.age} years old`;
+    console.log (`Hi. My name is ${this.name} and I'm ${this.age} years old`);
 }
 
 const user = new User('Sherlock', 27);
-console.log(user.sayHello); // має вивести "Hi. My name is Sherlock and I'm 27 years old"
+user.sayHello(); // має вивести "Hi. My name is Sherlock and I'm 27 years old"
 
 
 // 3
