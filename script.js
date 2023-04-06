@@ -4,9 +4,9 @@ let avg = calculateAverage(numbers);
 
 function calculateAverage(arr) {
     let sum = 0;
-    
+
     for (let i = 0; i < arr.length; i++) {
-         sum += arr[i];
+        sum += arr[i];
     }
     return sum / arr.length;
 }
@@ -20,7 +20,7 @@ function User(name, age) {
 }
 
 User.prototype.sayHello = function () {
-    console.log (`Hi. My name is ${this.name} and I'm ${this.age} years old`);
+    console.log(`Hi. My name is ${this.name} and I'm ${this.age} years old`);
 }
 
 const user = new User('Sherlock', 27);
@@ -28,12 +28,16 @@ user.sayHello(); // має вивести "Hi. My name is Sherlock and I'm 27 ye
 
 
 // 3
+const calculator = function () {
+    let init = 1;
+    return function () {
+        return init ++;
+    }
+}
+
 const c = calculator();
+
 console.log(c()); // має вивести 1
 console.log(c()); // має вивести 2
 
-const calculator = function (init = 0) {
-    return function () {
-        return init++;
-    }
-}
+
