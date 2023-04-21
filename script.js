@@ -7,9 +7,9 @@ async function fetchAllProject() {
 
     try {
         let allProjectRaw = await fetch(url);
-    console.log(allProjectRaw);
+        console.log(allProjectRaw);
 
-    return await allProjectRaw.json();
+        return await allProjectRaw.json();
     } catch (error) {
         console.log(error);
     }
@@ -25,13 +25,16 @@ async function fetchDataProject() {
                             <h2>${repos.full_name} ${repos.html_url}</h2
                             <div class="description">${repos.description}</div>
                             </div>`;
+       
 
         html += htmlSection;
 
 
     });
 
-    myProject.innerHTML = html;
+
+
+myProject.innerHTML = html;
 
 }
 
