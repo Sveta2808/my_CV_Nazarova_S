@@ -21,22 +21,22 @@ async function fetchDataProject() {
     let html = '';
 
     dataProject.forEach(repos => {
-        let htmlSection = `<div class="project-section">
+
+        let htmlSection_1 = `<div class="project-section">
                             <h2>${repos.full_name} ${repos.html_url}</h2
-                            <div class="description">${repos.description}</div>
+                            <div class="description">${repos.description} </div>
                             </div>`;
-       
-
-        html += htmlSection;
-
+        let htmlSection_2 = `<div class="project-section">
+                            <h2>${repos.full_name} ${repos.html_url}</h2
+                            </div>`;
+        if (repos.description !== null) {
+            return html += htmlSection_1;
+        } else return html += htmlSection_2;
 
     });
-
-
-
-myProject.innerHTML = html;
-
+    myProject.innerHTML = html;
 }
+
 
 fetchDataProject();
 
@@ -57,6 +57,7 @@ const letter_A = document.querySelector('.letter_A');
 const letter_B = document.querySelector('.letter_B');
 const letter_C = document.querySelector('.letter_C');
 const letter_D = document.querySelector('.letter_D');
+const letter_E = document.querySelector('.letter_E');
 
 document.addEventListener('keydown', function (event) {
     if (event.code === 'KeyA') {
@@ -70,6 +71,9 @@ document.addEventListener('keydown', function (event) {
     }
     else if (event.code === 'KeyD') {
         return letter_D.scrollIntoView(true)
+    }
+    else if (event.code === 'KeyE') {
+        return letter_E.scrollIntoView(true)
     }
 
 });
