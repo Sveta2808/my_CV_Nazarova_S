@@ -2,11 +2,14 @@ const myProject = document.querySelector('.my-project');
 
 myProject.addEventListener('click', fetchAllProject);
 
+let token = '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';
+
 class MyProjects {
     constructor(token, user_name) {
         this.token = token;
         this.user_name = user_name;
     }
+    getRepos(){}
 }
 
 
