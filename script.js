@@ -16,6 +16,7 @@ async function fetchAllProject() {
 
 }
 
+
 async function fetchDataProject() {
     let dataProject = await fetchAllProject();
     let html = '';
