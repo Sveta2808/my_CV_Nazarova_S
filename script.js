@@ -2,6 +2,14 @@ const myProject = document.querySelector('.my-project');
 
 myProject.addEventListener('click', fetchAllProject);
 
+class MyProjects {
+    constructor(token, user_name) {
+        this.token = token;
+        this.user_name = user_name;
+    }
+}
+
+
 async function fetchAllProject() {
     let url = 'https://api.github.com/users/Sveta2808/repos';
 
