@@ -1,56 +1,89 @@
 const myProject = document.querySelector('.my-project');
 
-myProject.addEventListener('click', fetchAllProject);
+myProject.addEventListener('click', () => myProjects.fetchAllProject());
 
 let token = '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';
+let url = 'https://api.github.com/users/Sveta2808/repos';
 
 class MyProjects {
-    constructor(token, user_name) {
+    constructor(token) {
         this.token = token;
-        this.user_name = user_name;
+
     }
-    getRepos(){}
-}
+    async fetchAllProject() {
+        try {
+            let allProjectRaw = await fetch(this.token);
+            console.log(allProjectRaw);
 
+            return await allProjectRaw.json();
+        } catch (error) {
+            console.log(error);
+        }
 
-async function fetchAllProject() {
-    let url = 'https://api.github.com/users/Sveta2808/repos';
-
-    try {
-        let allProjectRaw = await fetch(url);
-        console.log(allProjectRaw);
-
-        return await allProjectRaw.json();
-    } catch (error) {
-        console.log(error);
     }
+    async fetchDataProject() {
+        let dataProject = await fetchAllProject();
+        let html = '';
 
+        dataProject.forEach(repos => {
+
+            let htmlSection_1 = `<div class="project-section">
+                                <h2>${repos.full_name} ${repos.html_url}</h2
+                                <div class="description">${repos.description} </div>
+                                </div>`;
+            let htmlSection_2 = `<div class="project-section">
+                                <h2>${repos.full_name} ${repos.html_this.url}</h2
+                                </div>`;
+            if (repos.description !== null) {
+                return html += htmlSection_1;
+            } else return html += htmlSection_2;
+
+        });
+        myProject.innerHTML = html;
+    }
 }
 
-
-async function fetchDataProject() {
-    let dataProject = await fetchAllProject();
-    let html = '';
-
-    dataProject.forEach(repos => {
-
-        let htmlSection_1 = `<div class="project-section">
-                            <h2>${repos.full_name} ${repos.html_url}</h2
-                            <div class="description">${repos.description} </div>
-                            </div>`;
-        let htmlSection_2 = `<div class="project-section">
-                            <h2>${repos.full_name} ${repos.html_url}</h2
-                            </div>`;
-        if (repos.description !== null) {
-            return html += htmlSection_1;
-        } else return html += htmlSection_2;
-
-    });
-    myProject.innerHTML = html;
-}
+const myProjects = new MyProjects(token)
 
 
-fetchDataProject();
+// async function fetchAllProject() {
+//     let url = 'https://api.github.com/users/Sveta2808/repos';
+
+//     try {
+//         let allProjectRaw = await fetch(url);
+//         console.log(allProjectRaw);
+
+//         return await allProjectRaw.json();
+//     } catch (error) {
+//         console.log(error);
+//     }
+
+// }
+
+
+// async function fetchDataProject() {
+//     let dataProject = await fetchAllProject();
+//     let html = '';
+
+//     dataProject.forEach(repos => {
+
+//         let htmlSection_1 = `<div class="project-section">
+//                             <h2>${repos.full_name} ${repos.html_url}</h2
+//                             <div class="description">${repos.description} </div>
+//                             </div>`;
+//         let htmlSection_2 = `<div class="project-section">
+//                             <h2>${repos.full_name} ${repos.html_url}</h2
+//                             </div>`;
+//         if (repos.description !== null) {
+//             return html += htmlSection_1;
+//         } else return html += htmlSection_2;
+
+//     });
+//     myProject.innerHTML = html;
+// }
+
+
+// fetchDataProject();
 
 
 
